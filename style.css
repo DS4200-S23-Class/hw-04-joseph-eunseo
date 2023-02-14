@@ -1,0 +1,15 @@
+/* font */
+body {
+    font-family: Arial; 
+}
+
+/* Heading styles */
+h1 {  
+    text-align: center;
+}
+
+/* Splitting columns */
+body {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
