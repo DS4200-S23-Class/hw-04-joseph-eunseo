@@ -1,38 +1,70 @@
 <!DOCTYPE html>
-<html> 
-
+<html>
 <head>
-    <meta charset=utf-8/>
-    <title>ic-06</title>
-    <script type="text/javascript" src="hw04.js"></script>  
-
+  <title>hw-04</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-
 <body>
-    <h1 id="title">hw-04 - Event Handling</h1>
-
-    <form>
-  <label>
-    X:
-    <input type="number" name="x" min="1" max="9" required>
-  </label>
-  <br>
-  <label>
-
-        <h3>Acknowledgements</h3> <!-- All our wonderful resources we used! -->
-    <ul>
-        <li>
-            <a href="https://www.w3schools.com/graphics/svg_line.asp">SVG Line</a>
-        </li>
-        <li>
-            <a href="https://stackoverflow.com/questions/14751178/adding-border-to-svg-image">Border Review</a>
-        </li>
-        <li>
-            <a href="https://www.trimlight.com/rgb-codes">RGB Code Finder</a>
-        </li>
-    </ul>
-    
+  <h1 class="header">hw-04: Event Handling</h1>
+  <div class="container">
+    <div class="left-column">
+      <svg width="550" height="600">
+        <!-- Create the x-axis -->
+        <line x1="50" y1="500" x2="550" y2="500" stroke="black" />
+        <text x="50" y="520">0</text>
+        <text x="100" y="520">1</text>
+        <text x="150" y="520">2</text>
+        <text x="200" y="520">3</text>
+        <text x="250" y="520">4</text>
+        <text x="300" y="520">5</text>
+        <text x="350" y="520">6</text>
+        <text x="400" y="520">7</text>
+        <text x="450" y="520">8</text>
+        <text x="500" y="520">9</text>
+        
+        <!-- Create the y-axis -->
+        <line x1="50" y1="500" x2="50" y2="50" stroke="black" />
+        <text x="30" y="50">9</text>
+        <text x="30" y="100">8</text>
+        <text x="30" y="150">7</text>
+        <text x="30" y="200">6</text>
+        <text x="30" y="250">5</text>
+        <text x="30" y="300">4</text>
+        <text x="30" y="350">3</text>
+        <text x="30" y="400">2</text>
+        <text x="30" y="450">1</text>
+        <text x="30" y="500">0</text>
+        
+        <!-- Create the points -->
+        <circle cx="100" cy="400" r="5" fill="black" />
+        <circle cx="150" cy="300" r="5" fill="black" />
+        <circle cx="350" cy="400" r="5" fill="black" />
+        <circle cx="500" cy="50" r="5" fill="black" />
+      </svg>
+    </div>
+    <div class="right-column">
+      <div id="point-info"></div>
+      <form id="new-point-form">
+        <label for="new-point-x">X:</label>
+        <input type="number" id="new-point-x" name="new-point-x" min="1" max="9" required>
+        <label for="new-point-y">Y:</label>
+        <input type="number" id="new-point-y" name="new-point-y" min="1" max="9" required>
+        <button type="submit">Add point</button>
+      </form>
+    </div>
+  </div>
+  <h2>Acknowledgements</h2>
+  <ul>
+    <li>
+      <a href="https://www.w3schools.com/graphics/svg_line.asp">SVG Line</a>
+    </li>
+    <li>
+      <a href="https://stackoverflow.com/questions/14751178/adding-border-to-svg-image">Border Review</a>
+    </li>
+    <li>
+      <a href="https://www.trimlight.com/rgb-codes">RGB Code Finder</a>
+    </li>
+  </ul>
+  <script src="main.js"></script>
 </body>
-
 </html>
