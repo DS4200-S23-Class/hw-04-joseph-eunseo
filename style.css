@@ -13,3 +13,9 @@ body {
   display: grid;
   grid-template-columns: 60% 40%;
 }
+
+/* hover */
+circle:hover {
+  stroke: red;
+  stroke-width: 2;
+}
