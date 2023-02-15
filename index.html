@@ -8,7 +8,7 @@
   <h1 class="header">hw-04: Event Handling</h1>
   <div class="container">
     <div class="left-column">
-      <svg width="550" height="600">
+      <svg id="svg" width="550" height="600">
         <!-- Create the x-axis -->
         <line x1="50" y1="500" x2="550" y2="500" stroke="black" />
         <text x="50" y="520">0</text>
@@ -36,21 +36,21 @@
         <text x="30" y="500">0</text>
         
         <!-- Create the points -->
-        <circle cx="100" cy="400" r="5" fill="black" />
-        <circle cx="150" cy="300" r="5" fill="black" />
-        <circle cx="350" cy="400" r="5" fill="black" />
-        <circle cx="500" cy="50" r="5" fill="black" />
+        <circle class="point" cx="100" cy="400" r="10" />
+        <circle class="point" cx="150" cy="300" r="10" />
+        <circle class="point" cx="350" cy="400" r="10" />
+        <circle class="point" cx="500" cy="50" r="10" />
       </svg>
     </div>
     <div class="right-column">
-      <div id="point-info"></div>
-      <form id="new-point-form">
-        <label for="new-point-x">X:</label>
-        <input type="number" id="new-point-x" name="new-point-x" min="1" max="9" required>
-        <label for="new-point-y">Y:</label>
-        <input type="number" id="new-point-y" name="new-point-y" min="1" max="9" required>
+      <form id="form">
+        <label for="x">X-coordinate:</label>
+        <input type="number" id="x" name="x" min="1" max="9" required>
+        <label for="y">Y-coordinate:</label>
+        <input type="number" id="y" name="y" min="1" max="9" required>
         <button type="submit">Add point</button>
       </form>
+      <div id="coordinates"></div>
     </div>
   </div>
   <h2>Acknowledgements</h2>
